@@ -7,7 +7,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../src/App.js"></script>
+    <script src="App.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example">
     
@@ -22,7 +22,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./chromatin.html">Chromatin experimental data</a></li>
+                <li><a class="dropdown-item" href="#">Chromatin experimental data</a></li>
                 <li><a class="dropdown-item" href="#">Protein experimental data</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Pipeline</a></li>
@@ -42,11 +42,34 @@
         </div>
       </div>
     </nav>
-
-    <!-- Основной контент страницы -->
-    <div id="root"></div>
-
-    <!-- Подключение скриптов -->
-    <script src="../src/chromatin.js"></script>   
-  </body>
+    <div id="ChromatinTable"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="App.js"></script>
+    <script src="chromatin.js"></script>
+        <main>
+            <div class="container mt-4">
+                <h1>Chromatin Data</h1>
+                <div class="first-column">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="first-row"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Chromatin matrix</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+</body>
 </html>

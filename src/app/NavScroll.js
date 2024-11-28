@@ -7,7 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const name = "StereoGene database";
-const ele = <h1>Welcome to {name}</h1>;
 
 function NavScrollExample() {
   return (

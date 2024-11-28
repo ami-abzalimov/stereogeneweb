@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.css'; // если у вас есть стили
 import NavScroll from './components/NavScroll.js';
 import ChromatinTable from './components/chromatin.js';
 
